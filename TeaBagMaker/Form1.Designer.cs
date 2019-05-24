@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.CList = new System.Windows.Forms.ComboBox();
+            this.List = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.title = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // CList
+            // List
             // 
-            this.CList.Font = new System.Drawing.Font("굴림", 25F);
-            this.CList.FormattingEnabled = true;
-            this.CList.Location = new System.Drawing.Point(12, 59);
-            this.CList.Name = "CList";
-            this.CList.Size = new System.Drawing.Size(223, 41);
-            this.CList.TabIndex = 0;
+            this.List.Font = new System.Drawing.Font("굴림", 25F);
+            this.List.FormattingEnabled = true;
+            this.List.Location = new System.Drawing.Point(12, 59);
+            this.List.Name = "List";
+            this.List.Size = new System.Drawing.Size(223, 41);
+            this.List.TabIndex = 0;
             // 
             // button1
             // 
@@ -53,6 +53,12 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "담그기!";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // timer
+            // 
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // textBox1
             // 
@@ -81,7 +87,7 @@
             this.Controls.Add(this.title);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.CList);
+            this.Controls.Add(this.List);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -92,9 +98,9 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox CList;
+        private System.Windows.Forms.ComboBox List;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label title;
     }

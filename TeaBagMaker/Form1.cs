@@ -12,8 +12,8 @@ namespace TeaBagMaker
 {
     public partial class Form1 : Form
     {
-
         
+
         public Form1()
         {
             InitializeComponent();
@@ -25,6 +25,11 @@ namespace TeaBagMaker
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Label1_Click_1(object sender, EventArgs e)
         {
 
         }

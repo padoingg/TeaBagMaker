@@ -33,39 +33,52 @@
             this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.title = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // CList
             // 
             this.CList.Font = new System.Drawing.Font("굴림", 25F);
             this.CList.FormattingEnabled = true;
-            this.CList.Location = new System.Drawing.Point(13, 13);
+            this.CList.Location = new System.Drawing.Point(12, 59);
             this.CList.Name = "CList";
-            this.CList.Size = new System.Drawing.Size(209, 41);
+            this.CList.Size = new System.Drawing.Size(223, 41);
             this.CList.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(228, 13);
+            this.button1.Location = new System.Drawing.Point(241, 59);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 41);
+            this.button1.Size = new System.Drawing.Size(62, 41);
             this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
+            this.button1.Text = "담그기!";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("굴림", 30F);
-            this.textBox1.Location = new System.Drawing.Point(13, 60);
+            this.textBox1.Location = new System.Drawing.Point(12, 106);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(291, 53);
             this.textBox1.TabIndex = 2;
+            // 
+            // title
+            // 
+            this.title.AutoSize = true;
+            this.title.Font = new System.Drawing.Font("맑은 고딕", 20F);
+            this.title.Location = new System.Drawing.Point(52, 9);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(223, 37);
+            this.title.TabIndex = 4;
+            this.title.Text = "차를 만들어보자!";
+            this.title.Click += new System.EventHandler(this.Label1_Click_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(315, 127);
+            this.ClientSize = new System.Drawing.Size(315, 179);
+            this.Controls.Add(this.title);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CList);
@@ -83,6 +96,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label title;
     }
 }
 
